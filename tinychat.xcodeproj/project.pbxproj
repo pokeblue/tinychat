@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C60FD1F1FDE1E680017E46F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60FD1E1FDE1E680017E46F /* AppDelegate.swift */; };
+		4C60FD211FDE1E680017E46F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60FD201FDE1E680017E46F /* ViewController.swift */; };
+		4C60FD241FDE1E680017E46F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C60FD221FDE1E680017E46F /* Main.storyboard */; };
+		4C60FD271FDE1E680017E46F /* tinychat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C60FD251FDE1E680017E46F /* tinychat.xcdatamodeld */; };
+		4C60FD291FDE1E680017E46F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C60FD281FDE1E680017E46F /* Assets.xcassets */; };
+		4C60FD2C1FDE1E680017E46F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C60FD2A1FDE1E680017E46F /* LaunchScreen.storyboard */; };
+		4C60FD371FDE1E680017E46F /* tinychatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60FD361FDE1E680017E46F /* tinychatTests.swift */; };
+		4C60FD431FDE217A0017E46F /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60FD421FDE217A0017E46F /* SocketIOManager.swift */; };
+		4C60FD441FDE217A0017E46F /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60FD421FDE217A0017E46F /* SocketIOManager.swift */; };
+		4C60FD471FDE4B620017E46F /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C60FD461FDE4B620017E46F /* ChatTableViewCell.xib */; };
+		4C60FD481FDE4B620017E46F /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C60FD461FDE4B620017E46F /* ChatTableViewCell.xib */; };
+		4C60FD4A1FDE4C120017E46F /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60FD491FDE4C120017E46F /* ChatTableViewCell.swift */; };
+		4C60FD4B1FDE4C120017E46F /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60FD491FDE4C120017E46F /* ChatTableViewCell.swift */; };
+		4C60FD501FDED1910017E46F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60FD4F1FDED1910017E46F /* CoreDataManager.swift */; };
+		4C60FD511FDED1910017E46F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60FD4F1FDED1910017E46F /* CoreDataManager.swift */; };
+		4C60FD591FDED7680017E46F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60FD1E1FDE1E680017E46F /* AppDelegate.swift */; };
+		4C60FD5A1FDED7EE0017E46F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60FD201FDE1E680017E46F /* ViewController.swift */; };
+		4C60FD5B1FDED7F30017E46F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C60FD221FDE1E680017E46F /* Main.storyboard */; };
+		4C60FD5C1FDED7F80017E46F /* tinychat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C60FD251FDE1E680017E46F /* tinychat.xcdatamodeld */; };
+		4CC3F69A1FE0102B00FEA3D2 /* SimpleSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC3F6991FE0102B00FEA3D2 /* SimpleSocket.swift */; };
+		4CC3F69B1FE0102B00FEA3D2 /* SimpleSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC3F6991FE0102B00FEA3D2 /* SimpleSocket.swift */; };
+		AEC159DFC29C6EEF4FF02BFF /* Pods_tinychatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127945745C9BF850B966E00C /* Pods_tinychatTests.framework */; };
+		EED09CF84463AF0B20876048 /* Pods_tinychat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1C731C4DDECADDF6A354B7 /* Pods_tinychat.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C60FD331FDE1E680017E46F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C60FD131FDE1E680017E46F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C60FD1A1FDE1E680017E46F;
+			remoteInfo = tinychat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0582FF087C3EBA9916847381 /* Pods-tinychat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinychat.release.xcconfig"; path = "Pods/Target Support Files/Pods-tinychat/Pods-tinychat.release.xcconfig"; sourceTree = "<group>"; };
+		127945745C9BF850B966E00C /* Pods_tinychatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tinychatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DEE5E3F887249624CA6DB86 /* Pods-tinychatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinychatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tinychatTests/Pods-tinychatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		336B70AC203E6EEEB0B92179 /* Pods-tinychatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinychatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tinychatTests/Pods-tinychatTests.release.xcconfig"; sourceTree = "<group>"; };
+		4C60FD1B1FDE1E680017E46F /* tinychat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tinychat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C60FD1E1FDE1E680017E46F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C60FD201FDE1E680017E46F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C60FD231FDE1E680017E46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C60FD261FDE1E680017E46F /* tinychat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tinychat.xcdatamodel; sourceTree = "<group>"; };
+		4C60FD281FDE1E680017E46F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C60FD2B1FDE1E680017E46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C60FD2D1FDE1E680017E46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C60FD321FDE1E680017E46F /* tinychatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tinychatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C60FD361FDE1E680017E46F /* tinychatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tinychatTests.swift; sourceTree = "<group>"; };
+		4C60FD381FDE1E680017E46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C60FD421FDE217A0017E46F /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		4C60FD461FDE4B620017E46F /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		4C60FD491FDE4C120017E46F /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		4C60FD4F1FDED1910017E46F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4CC3F6991FE0102B00FEA3D2 /* SimpleSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSocket.swift; sourceTree = "<group>"; };
+		7B1C731C4DDECADDF6A354B7 /* Pods_tinychat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tinychat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A67F2CF65305C80C432F3F /* Pods-tinychat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinychat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tinychat/Pods-tinychat.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C60FD181FDE1E680017E46F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED09CF84463AF0B20876048 /* Pods_tinychat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C60FD2F1FDE1E680017E46F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC159DFC29C6EEF4FF02BFF /* Pods_tinychatTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A1CF5C8201BA9F500C3227D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C60FD201FDE1E680017E46F /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2A1CF5C9201BAA0B00C3227D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4C60FD221FDE1E680017E46F /* Main.storyboard */,
+				4C60FD2A1FDE1E680017E46F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4C60FD121FDE1E680017E46F = {
+			isa = PBXGroup;
+			children = (
+				4C60FD1D1FDE1E680017E46F /* tinychat */,
+				4C60FD351FDE1E680017E46F /* tinychatTests */,
+				4C60FD1C1FDE1E680017E46F /* Products */,
+				C4694B863A860A44844B316B /* Pods */,
+				887A1075A5A1F406C65DE253 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C60FD1C1FDE1E680017E46F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C60FD1B1FDE1E680017E46F /* tinychat.app */,
+				4C60FD321FDE1E680017E46F /* tinychatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C60FD1D1FDE1E680017E46F /* tinychat */ = {
+			isa = PBXGroup;
+			children = (
+				2A1CF5C9201BAA0B00C3227D /* Storyboards */,
+				2A1CF5C8201BA9F500C3227D /* ViewControllers */,
+				4CC3F6981FE0100B00FEA3D2 /* Helpers */,
+				4C60FD521FDED6630017E46F /* Model */,
+				4C60FD451FDE4B170017E46F /* Views */,
+				4C60FD411FDE20F80017E46F /* Managers */,
+				4C60FD1E1FDE1E680017E46F /* AppDelegate.swift */,
+				4C60FD281FDE1E680017E46F /* Assets.xcassets */,
+				4C60FD2D1FDE1E680017E46F /* Info.plist */,
+			);
+			path = tinychat;
+			sourceTree = "<group>";
+		};
+		4C60FD351FDE1E680017E46F /* tinychatTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C60FD361FDE1E680017E46F /* tinychatTests.swift */,
+				4C60FD381FDE1E680017E46F /* Info.plist */,
+			);
+			path = tinychatTests;
+			sourceTree = "<group>";
+		};
+		4C60FD411FDE20F80017E46F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4C60FD421FDE217A0017E46F /* SocketIOManager.swift */,
+				4C60FD4F1FDED1910017E46F /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4C60FD451FDE4B170017E46F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C60FD461FDE4B620017E46F /* ChatTableViewCell.xib */,
+				4C60FD491FDE4C120017E46F /* ChatTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C60FD521FDED6630017E46F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C60FD251FDE1E680017E46F /* tinychat.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4CC3F6981FE0100B00FEA3D2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4CC3F6991FE0102B00FEA3D2 /* SimpleSocket.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		887A1075A5A1F406C65DE253 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B1C731C4DDECADDF6A354B7 /* Pods_tinychat.framework */,
+				127945745C9BF850B966E00C /* Pods_tinychatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4694B863A860A44844B316B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8A67F2CF65305C80C432F3F /* Pods-tinychat.debug.xcconfig */,
+				0582FF087C3EBA9916847381 /* Pods-tinychat.release.xcconfig */,
+				2DEE5E3F887249624CA6DB86 /* Pods-tinychatTests.debug.xcconfig */,
+				336B70AC203E6EEEB0B92179 /* Pods-tinychatTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C60FD1A1FDE1E680017E46F /* tinychat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C60FD3B1FDE1E680017E46F /* Build configuration list for PBXNativeTarget "tinychat" */;
+			buildPhases = (
+				2B051C397390FD254237F0F0 /* [CP] Check Pods Manifest.lock */,
+				4C60FD171FDE1E680017E46F /* Sources */,
+				4C60FD181FDE1E680017E46F /* Frameworks */,
+				4C60FD191FDE1E680017E46F /* Resources */,
+				ACB0B85FA0A8FCBEF1C8520C /* [CP] Embed Pods Frameworks */,
+				95F575FDAB83AE7E45937E8A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tinychat;
+			productName = tinychat;
+			productReference = 4C60FD1B1FDE1E680017E46F /* tinychat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C60FD311FDE1E680017E46F /* tinychatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C60FD3E1FDE1E680017E46F /* Build configuration list for PBXNativeTarget "tinychatTests" */;
+			buildPhases = (
+				9DBB93970D6B2F24994F8F2D /* [CP] Check Pods Manifest.lock */,
+				4C60FD2E1FDE1E680017E46F /* Sources */,
+				4C60FD2F1FDE1E680017E46F /* Frameworks */,
+				4C60FD301FDE1E680017E46F /* Resources */,
+				CD274D737E61897CC2D46133 /* [CP] Embed Pods Frameworks */,
+				A1E3FA70FAE737AF63429D9E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C60FD341FDE1E680017E46F /* PBXTargetDependency */,
+			);
+			name = tinychatTests;
+			productName = tinychatTests;
+			productReference = 4C60FD321FDE1E680017E46F /* tinychatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C60FD131FDE1E680017E46F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = opengarden;
+				TargetAttributes = {
+					4C60FD1A1FDE1E680017E46F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					4C60FD311FDE1E680017E46F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4C60FD1A1FDE1E680017E46F;
+					};
+				};
+			};
+			buildConfigurationList = 4C60FD161FDE1E680017E46F /* Build configuration list for PBXProject "tinychat" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C60FD121FDE1E680017E46F;
+			productRefGroup = 4C60FD1C1FDE1E680017E46F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C60FD1A1FDE1E680017E46F /* tinychat */,
+				4C60FD311FDE1E680017E46F /* tinychatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C60FD191FDE1E680017E46F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C60FD2C1FDE1E680017E46F /* LaunchScreen.storyboard in Resources */,
+				4C60FD471FDE4B620017E46F /* ChatTableViewCell.xib in Resources */,
+				4C60FD291FDE1E680017E46F /* Assets.xcassets in Resources */,
+				4C60FD241FDE1E680017E46F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C60FD301FDE1E680017E46F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C60FD481FDE4B620017E46F /* ChatTableViewCell.xib in Resources */,
+				4C60FD5B1FDED7F30017E46F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B051C397390FD254237F0F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tinychat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95F575FDAB83AE7E45937E8A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tinychat/Pods-tinychat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DBB93970D6B2F24994F8F2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tinychatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1E3FA70FAE737AF63429D9E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tinychatTests/Pods-tinychatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACB0B85FA0A8FCBEF1C8520C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tinychat/Pods-tinychat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReachabilitySwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tinychat/Pods-tinychat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD274D737E61897CC2D46133 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tinychatTests/Pods-tinychatTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReachabilitySwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tinychatTests/Pods-tinychatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C60FD171FDE1E680017E46F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC3F69A1FE0102B00FEA3D2 /* SimpleSocket.swift in Sources */,
+				4C60FD501FDED1910017E46F /* CoreDataManager.swift in Sources */,
+				4C60FD271FDE1E680017E46F /* tinychat.xcdatamodeld in Sources */,
+				4C60FD211FDE1E680017E46F /* ViewController.swift in Sources */,
+				4C60FD4A1FDE4C120017E46F /* ChatTableViewCell.swift in Sources */,
+				4C60FD431FDE217A0017E46F /* SocketIOManager.swift in Sources */,
+				4C60FD1F1FDE1E680017E46F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C60FD2E1FDE1E680017E46F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC3F69B1FE0102B00FEA3D2 /* SimpleSocket.swift in Sources */,
+				4C60FD4B1FDE4C120017E46F /* ChatTableViewCell.swift in Sources */,
+				4C60FD441FDE217A0017E46F /* SocketIOManager.swift in Sources */,
+				4C60FD591FDED7680017E46F /* AppDelegate.swift in Sources */,
+				4C60FD511FDED1910017E46F /* CoreDataManager.swift in Sources */,
+				4C60FD5C1FDED7F80017E46F /* tinychat.xcdatamodeld in Sources */,
+				4C60FD5A1FDED7EE0017E46F /* ViewController.swift in Sources */,
+				4C60FD371FDE1E680017E46F /* tinychatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C60FD341FDE1E680017E46F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C60FD1A1FDE1E680017E46F /* tinychat */;
+			targetProxy = 4C60FD331FDE1E680017E46F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C60FD221FDE1E680017E46F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C60FD231FDE1E680017E46F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C60FD2A1FDE1E680017E46F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C60FD2B1FDE1E680017E46F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C60FD391FDE1E680017E46F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C60FD3A1FDE1E680017E46F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C60FD3C1FDE1E680017E46F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A67F2CF65305C80C432F3F /* Pods-tinychat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3J68V5NEH9;
+				INFOPLIST_FILE = tinychat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.opengarden.tinychat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C60FD3D1FDE1E680017E46F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0582FF087C3EBA9916847381 /* Pods-tinychat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3J68V5NEH9;
+				INFOPLIST_FILE = tinychat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.opengarden.tinychat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4C60FD3F1FDE1E680017E46F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DEE5E3F887249624CA6DB86 /* Pods-tinychatTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3J68V5NEH9;
+				INFOPLIST_FILE = tinychatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.opengarden.tinychatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tinychat.app/tinychat";
+			};
+			name = Debug;
+		};
+		4C60FD401FDE1E680017E46F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 336B70AC203E6EEEB0B92179 /* Pods-tinychatTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3J68V5NEH9;
+				INFOPLIST_FILE = tinychatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.opengarden.tinychatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tinychat.app/tinychat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C60FD161FDE1E680017E46F /* Build configuration list for PBXProject "tinychat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C60FD391FDE1E680017E46F /* Debug */,
+				4C60FD3A1FDE1E680017E46F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C60FD3B1FDE1E680017E46F /* Build configuration list for PBXNativeTarget "tinychat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C60FD3C1FDE1E680017E46F /* Debug */,
+				4C60FD3D1FDE1E680017E46F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C60FD3E1FDE1E680017E46F /* Build configuration list for PBXNativeTarget "tinychatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C60FD3F1FDE1E680017E46F /* Debug */,
+				4C60FD401FDE1E680017E46F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4C60FD251FDE1E680017E46F /* tinychat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C60FD261FDE1E680017E46F /* tinychat.xcdatamodel */,
+			);
+			currentVersion = 4C60FD261FDE1E680017E46F /* tinychat.xcdatamodel */;
+			path = tinychat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4C60FD131FDE1E680017E46F /* Project object */;
+}
